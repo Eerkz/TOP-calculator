@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- notif bar -->
+            <div class="top-part">
+                <p>9:41</p>
+                <div class="icons-container">
+                    <i class="fas fa-wifi notif-icon" ></i>
+                    <i class="fas fa-battery-full notif-icon"></i>
+                    <i class="fas fa-signal notif-icon"></i>
+                </div>
+            </div>
+            <!-- preview part -->
+            <div class="middle-part">
+                <div class="toggle-container">
+                    <div class="inner-toggle-container">
+                        <i class="far fa-sun"></i>
+                        <i class="far fa-moon"></i>
+                    </div>
+                </div>
+                <div data-previous-operand class="operation-text">
+                </div>
+                <div data-current-operand class="screen-text">
+                </div>
+            </div>
+
+            <!-- buttons part -->
+            <div class="bottom-part">
+                <div class="row-1">
+                    <button type ="button" class="green-button button-text" disabled>AC</button>
+                    <button type ="button" class="green-button button-text" disabled>+/-</button>
+                    <button type ="button" data-delete class="green-button delete"><i class="fas fa-arrow-left"></i></button>
+                    <button type ="button" data-operation value = "÷" class="red-button operation-button"><i class="fas fa-divide operator"></i></button>
+                </div>
+                <div class="row-2">
+                    <button type ="button"  data-number  class="white-button number-button">7</button>
+                    <button type ="button"  data-number class="white-button number-button">8</button>
+                    <button type ="button"  data-number class="white-button number-button">9</button>
+                    <button type ="button"  data-operation value = "*" class="red-button operation-button" ><i class="fas fa-times operator"></i></button>
+                </div>
+                <div class="row-3">
+                    <button type ="button" data-number class="white-button number-button">4</button>
+                    <button type ="button" data-number class="white-button number-button">5</button>
+                    <button type ="button" data-number class="white-button number-button">6</button>
+                    <button type ="button" data-operation value= "-" class="red-button operation-button"><i class="fas fa-minus operator"></i></button>
+                </div>
+                <div class="row-4">
+                    <button type ="button" data-number class="white-button number-button">1</button>
+                    <button type ="button" data-number class="white-button number-button">2</button>
+                    <button type ="button" data-number class="white-button number-button">3</button>
+                    <button type ="button" data-operation value="+" class="red-button operation-button"><i class="fas fa-plus operator"></i></button>
+                </div>
+                <div class="row-5">
+                    <button type ="button" data-all-clear class="white-button clear"><i class="fas fa-redo"></i></button>
+                    <button type ="button" data-number class="white-button number-button">0</button>
+                    <button type ="button" data-number class="white-button number-button">.</button>
+                    <button type ="button" data-equals class="red-button equal"><i class="fas fa-equals"></i></button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <i class="fab fa-dribbble-square"></i><span>Inspired by <a href="https://dribbble.com/shots/14709020-Calculator/attachments/6408579?mode=media">this</a> dribbble</span>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
